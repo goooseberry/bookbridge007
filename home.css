@@ -1,0 +1,132 @@
+/* Home Page Styles */
+.home-page .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9fafb;
+  }
+  
+  .home-page .hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .home-page .hero p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .home-page .search-bar {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .home-page .search-bar input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .home-page .search-bar button {
+    background-color: #6d28d9;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .home-page .search-bar button:hover {
+    background-color: #5b21b6;
+  }
+  
+  .home-page .book-list {
+    padding: 40px 20px;
+  }
+  
+  .home-page .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .home-page .book-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .home-page .book-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .home-page .book-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .home-page .book-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 16px;
+  }
+  
+  .home-page .book-card p {
+    font-size: 16px;
+    color: #666;
+    margin: 0 16px 16px;
+  }
+  
+  /* Profile Dropdown Styles */
+  .home-page .profile-dropdown {
+    position: relative;
+  }
+  
+  .home-page .profile-dropdown button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .home-page .profile-dropdown img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .home-page #dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  
+  .home-page #dropdown-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .home-page #dropdown-menu li a {
+    display: block;
+    padding: 12px 24px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .home-page #dropdown-menu li a:hover {
+    background-color: #f0f0f0;
+  }

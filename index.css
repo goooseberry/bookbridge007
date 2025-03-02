@@ -1,0 +1,68 @@
+/* Hero Section Styles */
+.intro-page .hero {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9fafb;
+  }
+  
+  .intro-page .hero h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .intro-page .hero p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  /* About Section Styles */
+  .intro-page .about {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .intro-page .about h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .intro-page .about p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* Call to Action Section Styles */
+  .intro-page .cta {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #6d28d9;
+    color: white;
+  }
+  
+  .intro-page .cta h3 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .intro-page .cta p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  .intro-page .cta .btn {
+    background-color: white;
+    color: #6d28d9;
+    padding: 12px 24px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .intro-page .cta .btn:hover {
+    background-color: #f0f0f0;
+  }
