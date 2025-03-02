@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Bridge Dashboard</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/home.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.0.0/firebase-firestore.js"></script>
+</head>
+<body class="home-page">
+  <div class="page-container">
+    <!-- Header -->
+    <header>
+      <h1>📚 Book Bridge</h1>
+      <nav>
+        <a href="donate.html">Donate</a>
+        <a href="sell.html">Sell</a>
+        <a href="buy.html">Buy</a>
+        <a href="free-books.html">Free Books</a>
+        <a href="dashboard.html">Admin Dashboard</a>
+        <div class="profile-dropdown">
+          <button id="profile-dropdown">
+            <img src="https://sickonsin.com/cdn/shop/products/Siamese_Cat_9_Lives_Club_Accessory_SickOnSin.jpg?v=1596859843" alt="Profile">
+          </button>
+          <div id="dropdown-menu">
+            <ul>
+              <li><a href="profile.html">My Profile</a></li>
+              <li><a href="#">Edit Listings</a></li>
+              <li><a href="#">Wishlist</a></li>
+              <li><a href="#">Settings</a></li>
+              <li><a href="#">Sign Out</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="content">
+      <section class="hero">
+        <h2>Find & Share Books</h2>
+        <p>Swap Knowledge, Save Money</p>
+        <div class="search-bar">
+          <input type="text" id="search" placeholder="Search all books...">
+          <button id="explore-btn">Explore Books</button>
+        </div>
+      </section>
+
+      <!-- Book List Section -->
+      <section class="book-list">
+        <div id="book-list" class="book-grid">
+          <!-- Book cards will be dynamically inserted here -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2023 Book Bridge. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="scripts/script.js"></script>
+  <script src="scripts/home.js"></script>
+</body>
+</html>
