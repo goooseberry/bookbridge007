@@ -1,9 +1,10 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js";
-import { 
-  getAuth, 
-  signInWithEmailAndPassword, 
+import {
+  getAuth,
+  signInWithEmailAndPassword,
   sendEmailVerification,
-  sendPasswordResetEmail
+  sendPasswordResetEmail,
+  onAuthStateChanged
 } from "https://www.gstatic.com/firebasejs/11.4.0/firebase-auth.js";
 
 const firebaseConfig = {
@@ -17,6 +18,13 @@ const firebaseConfig = {
 
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+
+// Check if user is already logged in
+onAuthStateChanged(auth, (user) => {
+  if (user && user.emailVerified) {
+    window.location.href = "home.html";
+  }
+});
 
 const submit = document.getElementById('submit');
 submit.addEventListener("click", function (event) {
